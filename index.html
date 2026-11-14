@@ -1,42 +1,117 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vu Bui's Site</title>
+    <meta
+      name="description"
+      content="I'm Vu Bui, a student developer. Learn more about me and get in touch."
+    />
+    <meta name="keywords" content="Vu Bui, student developer, portfolio" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Vu Bui" />
+    <meta property="og:title" content="Vu Bui's Site" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/banner.jpg" />
+    <meta name="twitter:title" content="Vu Bui's Site" />
+    <meta
+      name="twitter:description"
+      content="I'm Vu Bui, a student developer. Learn more about me and get in touch."
+    />
+    <meta name="twitter:image" content="/banner.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="font-sans text-neutral-900 antialiased">
+    <main>
+      <section
+        class="relative flex min-h-screen items-center bg-neutral-900 bg-cover bg-center px-6 py-24 text-white lg:px-20"
+        style="background-image: url('/banner.jpg')"
+      >
+        <div class="absolute inset-0 bg-neutral-950/65"></div>
+        <div class="relative mx-auto w-full max-w-6xl">
+          <div class="banner-text max-w-3xl">
+            <p class="mb-4 text-lg font-medium uppercase tracking-[0.2em] text-teal-200">
+              Welcome to my portfolio
+            </p>
+            <h1 class="text-4xl font-bold leading-tight sm:text-6xl lg:text-7xl">
+              Hi, my name is <span class="text-teal-400">Vu Bui</span>
+            </h1>
+            <p class="mt-5 text-2xl font-light sm:text-3xl">
+              I'm a Student Developer.
+            </p>
+          </div>
+          <a
+            class="banner-cta mt-10 inline-flex items-center rounded-full bg-teal-400 px-8 py-3 font-semibold text-neutral-950 transition hover:bg-teal-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            href="#about-me"
+          >
+            Know more
+          </a>
+        </div>
+      </section>
 
-<head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
+      <section id="about-me" class="bg-teal-400 px-6 py-20 text-white lg:px-20 lg:py-28">
+        <div class="mx-auto max-w-5xl">
+          <h2 class="section-title text-center text-3xl font-bold sm:text-4xl">
+            About Me
+          </h2>
+          <div class="section-content mx-auto mt-12 flex max-w-4xl flex-col items-center gap-8 text-center lg:flex-row lg:text-left">
+            <img
+              class="h-40 w-40 shrink-0 rounded-full border-4 border-white/70 bg-teal-500 object-cover"
+              src="/imgs/avatar.jpg"
+              alt="Portrait of Vu Bui"
+            />
+            <div>
+              <p class="text-lg leading-relaxed">
+                I'm Vu Bui, a student developer who enjoys learning how to build
+                useful, thoughtful experiences for the web. I'm always excited
+                to take on new challenges and grow through collaboration.
+              </p>
+              <a
+                class="mt-7 inline-flex rounded-full border-2 border-white px-7 py-3 font-semibold text-white transition hover:bg-white hover:text-teal-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                href="/cv.pdf"
+              >
+                View My CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    body,
-    html {
-      height: 100%
-    }
+      <section id="contact" class="bg-white px-6 py-20 text-center lg:px-20 lg:py-28">
+        <div class="mx-auto max-w-4xl">
+          <h2 class="section-title text-3xl font-bold text-neutral-900 sm:text-4xl">
+            Contact
+          </h2>
+          <div class="section-content mt-7">
+            <p class="text-sm font-semibold tracking-[0.18em] text-teal-700 sm:text-base">
+              I LOOK FORWARD TO WORKING WITH YOU
+            </p>
+            <a
+              class="mt-8 inline-flex rounded-full bg-teal-500 px-8 py-3 font-semibold text-neutral-950 transition hover:bg-teal-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
+              href="mailto:vu.bui240932@vnuk.udn.vn"
+            >
+              Send An Email Now
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
-</head>
+    <footer class="bg-neutral-900 px-6 py-8 text-center text-white">
+      <a
+        class="inline-flex rounded-full p-3 text-white transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400"
+        href="https://github.com/vubui240932-cell"
+        aria-label="Vu Bui on GitHub"
+      >
+        <img class="h-7 w-7 invert" src="/imgs/github.svg" alt="" />
+      </a>
+      <hr class="mx-auto my-6 max-w-5xl border-neutral-700" />
+      <p class="text-sm text-neutral-300">©2026 - Vu Bui</p>
+    </footer>
 
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Vu Bui
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
-    </div>
-  </div>
-</body>
+    <script type="module" src="/src/scripts/application.js"></script>
+  </body>
 </html>
