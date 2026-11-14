@@ -6,9 +6,9 @@
     <title>Vu Bui's Site</title>
     <meta
       name="description"
-      content="I'm Vu Bui, a student developer. Learn more about me and get in touch."
+      content="I'm Vu Bui, a Software Engineering student. Learn more about me and my work."
     />
-    <meta name="keywords" content="Vu Bui, student developer, portfolio" />
+    <meta name="keywords" content="Vu Bui, software engineering student, portfolio" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="author" content="Vu Bui" />
@@ -18,16 +18,54 @@
     <meta name="twitter:title" content="Vu Bui's Site" />
     <meta
       name="twitter:description"
-      content="I'm Vu Bui, a student developer. Learn more about me and get in touch."
+      content="I'm Vu Bui, a Software Engineering student. Learn more about me and my work."
     />
     <meta name="twitter:image" content="/banner.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body class="font-sans text-neutral-900 antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 bg-neutral-900/95 text-white shadow-lg">
+      <nav
+        class="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-6 py-4 lg:px-20"
+        aria-label="Main navigation"
+      >
+        <a class="text-lg font-bold" href="#" aria-label="Vu Bui home">Vu Bui</a>
+        <button
+          id="menu-toggle"
+          class="inline-flex items-center justify-center rounded p-2 text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400 lg:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div
+          id="primary-navigation"
+          class="hidden w-full flex-col gap-2 pt-4 lg:flex lg:w-auto lg:flex-row lg:items-center lg:gap-8 lg:pt-0"
+        >
+          <a class="rounded px-2 py-2 transition hover:text-teal-400 lg:py-1" href="#about-me">About</a>
+          <a class="rounded px-2 py-2 transition hover:text-teal-400 lg:py-1" href="#skills">Skills</a>
+          <a class="rounded px-2 py-2 transition hover:text-teal-400 lg:py-1" href="#education">Education</a>
+          <a class="rounded px-2 py-2 transition hover:text-teal-400 lg:py-1" href="#projects">Projects</a>
+          <a class="rounded px-2 py-2 transition hover:text-teal-400 lg:py-1" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <section
-        class="relative flex min-h-screen items-center bg-neutral-900 bg-cover bg-center px-6 py-24 text-white lg:px-20"
+        class="relative flex min-h-screen items-center bg-neutral-900 bg-cover bg-center px-6 pb-24 pt-32 text-white lg:px-20 lg:pt-24"
         style="background-image: url('/banner.jpg')"
       >
         <div class="absolute inset-0 bg-neutral-950/65"></div>
@@ -40,7 +78,7 @@
               Hi, my name is <span class="text-teal-400">Vu Bui</span>
             </h1>
             <p class="mt-5 text-2xl font-light sm:text-3xl">
-              I'm a Student Developer.
+              I'm a Software Engineering Student.
             </p>
           </div>
           <a
@@ -52,7 +90,7 @@
         </div>
       </section>
 
-      <section id="about-me" class="bg-teal-400 px-6 py-20 text-white lg:px-20 lg:py-28">
+      <section id="about-me" class="scroll-mt-20 bg-teal-400 px-6 py-20 text-white lg:px-20 lg:py-28">
         <div class="mx-auto max-w-5xl">
           <h2 class="section-title text-center text-3xl font-bold sm:text-4xl">
             About Me
@@ -65,9 +103,10 @@
             />
             <div>
               <p class="text-lg leading-relaxed">
-                I'm Vu Bui, a student developer who enjoys learning how to build
-                useful, thoughtful experiences for the web. I'm always excited
-                to take on new challenges and grow through collaboration.
+                I'm a Software Engineering student at VNUK – The University of
+                Danang. I enjoy building websites and learning modern web
+                technologies. I'm currently practicing HTML, CSS, JavaScript
+                and Git, and I want to become a professional software developer.
               </p>
               <a
                 class="mt-7 inline-flex rounded-full border-2 border-white px-7 py-3 font-semibold text-white transition hover:bg-white hover:text-teal-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
@@ -80,7 +119,84 @@
         </div>
       </section>
 
-      <section id="contact" class="bg-white px-6 py-20 text-center lg:px-20 lg:py-28">
+      <section id="skills" class="scroll-mt-20 bg-white px-6 py-20 lg:px-20 lg:py-28">
+        <div class="mx-auto max-w-5xl">
+          <h2 class="section-title text-center text-3xl font-bold text-gray-800 sm:text-4xl">
+            Skills
+          </h2>
+          <div class="section-content mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+            <div class="rounded-xl border border-gray-200 px-4 py-6 text-center font-semibold text-gray-800 transition hover:border-teal-400 hover:bg-teal-50 hover:text-teal-700">HTML</div>
+            <div class="rounded-xl border border-gray-200 px-4 py-6 text-center font-semibold text-gray-800 transition hover:border-teal-400 hover:bg-teal-50 hover:text-teal-700">CSS</div>
+            <div class="rounded-xl border border-gray-200 px-4 py-6 text-center font-semibold text-gray-800 transition hover:border-teal-400 hover:bg-teal-50 hover:text-teal-700">Git &amp; GitHub</div>
+          </div>
+          <p class="section-content mt-6 text-center text-sm text-gray-500">
+            Currently learning: JavaScript, Tailwind CSS
+          </p>
+        </div>
+      </section>
+
+      <section id="education" class="scroll-mt-20 bg-teal-400 px-6 py-20 text-white lg:px-20 lg:py-28">
+        <div class="mx-auto max-w-5xl">
+          <h2 class="section-title text-center text-3xl font-bold sm:text-4xl">
+            Education
+          </h2>
+          <div class="section-content mx-auto mt-12 max-w-4xl rounded-xl border border-white/50 p-6 text-center text-lg leading-relaxed lg:p-8">
+            Bachelor of Software Engineering – VNUK Institute for Research and
+            Executive Education, The University of Danang – 2024 – Present
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="scroll-mt-20 bg-white px-6 py-20 lg:px-20 lg:py-28">
+        <div class="mx-auto max-w-5xl">
+          <h2 class="section-title text-center text-3xl font-bold text-gray-800 sm:text-4xl">
+            Projects
+          </h2>
+          <div class="section-content mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <article class="flex flex-col rounded-xl border border-gray-200 p-6 text-gray-800 transition hover:border-teal-400 hover:shadow-lg lg:p-8">
+              <h3 class="text-xl font-bold">Personal Portfolio Website</h3>
+              <p class="mt-3 leading-relaxed">
+                My personal portfolio built with Vite and Tailwind CSS, deployed
+                automatically to GitHub Pages using GitHub Actions.
+              </p>
+              <ul class="mt-5 flex flex-wrap gap-2" aria-label="Technologies used">
+                <li class="rounded-full bg-teal-50 px-3 py-1 text-sm font-medium text-teal-800">Vite</li>
+                <li class="rounded-full bg-teal-50 px-3 py-1 text-sm font-medium text-teal-800">Tailwind CSS</li>
+                <li class="rounded-full bg-teal-50 px-3 py-1 text-sm font-medium text-teal-800">GitHub Actions</li>
+              </ul>
+              <a
+                class="mt-7 inline-flex w-fit rounded-full bg-teal-400 px-6 py-3 font-semibold text-gray-800 transition hover:bg-teal-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
+                href="https://github.com/vubui240932-cell/vubui240932-cell.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </article>
+            <article class="flex flex-col rounded-xl border border-gray-200 p-6 text-gray-800 transition hover:border-teal-400 hover:shadow-lg lg:p-8">
+              <h3 class="text-xl font-bold">GitHub Flow Practice</h3>
+              <p class="mt-3 leading-relaxed">
+                Practiced GitHub Flow: issues, feature branches, pull requests,
+                branch protection, rebase and resolving merge conflicts.
+              </p>
+              <ul class="mt-5 flex flex-wrap gap-2" aria-label="Technologies used">
+                <li class="rounded-full bg-teal-50 px-3 py-1 text-sm font-medium text-teal-800">Git</li>
+                <li class="rounded-full bg-teal-50 px-3 py-1 text-sm font-medium text-teal-800">GitHub</li>
+              </ul>
+              <a
+                class="mt-7 inline-flex w-fit rounded-full bg-teal-400 px-6 py-3 font-semibold text-gray-800 transition hover:bg-teal-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
+                href="https://github.com/vubui240932-cell/vubui240932-cell.github.io/pulls?q=is%3Apr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-20 bg-white px-6 py-20 text-center lg:px-20 lg:py-28">
         <div class="mx-auto max-w-4xl">
           <h2 class="section-title text-3xl font-bold text-neutral-900 sm:text-4xl">
             Contact
